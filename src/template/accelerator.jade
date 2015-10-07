@@ -1,0 +1,22 @@
+extends layout
+
+
+
+
+block content
+	h2.top Акселератор
+	.container-fluid
+		.axs-body.clearfix
+			.axs-5
+				h1 Ускоряем стартапы
+				p.axs-text За % от бизнеса управляем развитием стартапов
+			.axs-5
+				form.axs-form(action="/post3",method="post",autocomplete="on")
+					h3 Обсудить детали
+					input.axs-input(type="text",name="name",placeholder='ВАШЕ ИМЯ',required)
+					input.axs-input(type="tel",name="tel",placeholder='НОМЕР ТЕЛЕФОНА',required)
+					input.axs-input(type="email",name="email",placeholder='E-MAIL',required)
+					button.axs-submit(type='submit') Отправить
+					.axs-form-done Спасибо! <br>Ваша заявка<br>успешно отправлена.
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Иван Процко и партнеры</title>
+		<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/>
+		<!-- Критический css, шрифты, модернайзер-->
+		<script>!function(){"use strict";var e;return window.OnBind=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)},e=function(e){var t;t=document.createElement("link"),t.href=e,t.rel="stylesheet",t.type="text/css",document.getElementsByTagName("head")[0].appendChild(t)},window.includeCss=function(t){var n,a,r;if(Array.isArray(t))for(n=0,a=t.length;a>n;n++)r=t[n],e(r);else e(t)}}();
+		</script>
+		<script>!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var f in y){if(e=[],n=y[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),b.push((o?"":"no-")+a.join("-"))}}function i(e){var n=_.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?_.className.baseVal=n:_.className=n)}function s(e,n){return!!~(""+e).indexOf(n)}function a(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function f(){var e=n.body;return e||(e=a(x?"svg":"body"),e.fake=!0),e}function u(e,t,r,o){var i,s,u,l,A="modernizr",p=a("div"),d=f();if(parseInt(r,10))for(;r--;)u=a("div"),u.id=o?o[r]:A+(r+1),p.appendChild(u);return i=a("style"),i.type="text/css",i.id="s"+A,(d.fake?d:p).appendChild(i),d.appendChild(p),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),p.id=A,d.fake&&(d.style.background="",d.style.overflow="hidden",l=_.style.overflow,_.style.overflow="hidden",_.appendChild(d)),s=t(p,e),d.fake?(d.parentNode.removeChild(d),_.style.overflow=l,_.offsetHeight):p.parentNode.removeChild(p),!!s}function l(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function A(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(l(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+l(n[o])+":"+r+")");return i=i.join(" or "),u("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function p(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function d(e,n,o,i){function f(){l&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=A(e,o);if(!r(u,"undefined"))return u}for(var l,d,c,m,v,h=["modernizr","tspan"];!U.style;)l=!0,U.modElem=a(h.shift()),U.style=U.modElem.style;for(c=e.length,d=0;c>d;d++)if(m=e[d],v=U.style[m],s(m,"-")&&(m=p(m)),U.style[m]!==t){if(i||r(o,"undefined"))return f(),"pfx"==n?m:!0;try{U.style[m]=o}catch(g){}if(U.style[m]!=v)return f(),"pfx"==n?m:!0}return f(),!1}function c(e,n){return function(){return e.apply(n,arguments)}}function m(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?c(o,t||n):o);return!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+B.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?d(a,n,o,i):(a=(e+" "+S.join(s+" ")+s).split(" "),m(a,n,t))}function h(e,n,r){return v(e,t,t,n,r)}function g(e,n){if("object"==typeof e)for(var t in e)j(e,t)&&g(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var y=[],w={_version:"3.0.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){y.push({name:e,fn:n,options:t})},addAsyncTest:function(e){y.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=w,Modernizr=new Modernizr;var b=[],_=n.documentElement,x="svg"===_.nodeName.toLowerCase(),C="Moz O ms Webkit",S=w._config.usePrefixes?C.toLowerCase().split(" "):[];w._domPrefixes=S;var T=w._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):[];w._prefixes=T;var B=w._config.usePrefixes?C.split(" "):[];w._cssomPrefixes=B;var Q={elem:a("modernizr")};Modernizr._q.push(function(){delete Q.elem});var U={style:Q.elem.style};Modernizr._q.unshift(function(){delete U.style}),w.testAllProps=v;var R=function(n){var r,o=T.length,i=e.CSSRule;if("undefined"==typeof i)return t;if(!n)return!1;if(n=n.replace(/^@/,""),r=n.replace(/-/g,"_").toUpperCase()+"_RULE",r in i)return"@"+n;for(var s=0;o>s;s++){var a=T[s],f=a.toUpperCase()+"_"+r;if(f in i)return"@-"+a.toLowerCase()+"-"+n}return!1};w.atRule=R;var E=w.prefixed=function(e,n,t){return 0===e.indexOf("@")?R(e):(-1!=e.indexOf("-")&&(e=p(e)),n?v(e,n,t):v(e,"pfx"))};w.prefixedCSS=function(e){var n=E(e);return n&&l(n)};w.testAllProps=h;var k="CSS"in e&&"supports"in e.CSS,P="supportsCSS"in e;Modernizr.addTest("supports",k||P),Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return h("filter","blur(2px)");var e=a("a");return e.style.cssText=T.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)});var z=w.testStyles=u;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var r=["@media (",T.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(r,function(e){t=9===e.offsetTop})}return t}),Modernizr.addTest("csstransforms",function(){return-1===navigator.userAgent.indexOf("Android 2.")&&h("transform","scale(1)",!0)}),Modernizr.addTest("csstransforms3d",function(){var e=!!h("perspective","1px",!0),n=Modernizr._config.usePrefixes;if(e&&(!n||"webkitPerspective"in _.style)){var t;Modernizr.supports?t="@supports (perspective: 1px)":(t="@media (transform-3d)",n&&(t+=",(-webkit-transform-3d)")),t+="{#modernizr{left:9px;position:absolute;height:5px;margin:0;padding:0;border:0}}",z(t,function(n){e=9===n.offsetLeft&&5===n.offsetHeight})}return e}),Modernizr.addTest("csstransitions",h("transition","all",!0));var j;!function(){var e={}.hasOwnProperty;j=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),w._l={},w.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},w._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){w.addTest=g}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;g(e,i?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})}),o(),i(b),delete w.addTest,delete w.addAsyncTest;for(var D=0;D<Modernizr._q.length;D++)Modernizr._q[D]();e.Modernizr=Modernizr}(window,document);
+		</script>
+		<meta http-equiv="x-dns-prefetch-control" content="on"/>
+		<link rel="dns-prefetch" href="https://use.typekit.net"/>
+		<script src="https://use.typekit.net/srp3qat.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<!-- Критический css, шрифты, модернайзер-->
+		
+		
+	</head>
+	<body>
+		<aside class="left-menu"><a href="index.html" title="Прейти на главную" class="site-logo table">
+				<div class="table-cell vrt">И П<br>И П</div>
+				<div class="table-cell">Иван Процко<br >и партнеры</div></a>
+			<nav>
+				<ul>
+					<li><a href="courses.html" title="Посмотреть все курсы и продукты">Учебный центр</a></li>
+					<li><a href="incubator.html" title="Инкубатор">Инкубатор</a></li>
+					<li><a href="accelerator.html" title="Акселератор">Акселератор</a></li>
+					<li><a href="services.html" title="Наши услуги">Услуги</a></li>
+					<li><a href="contact.html" title="Связь">Связь</a></li>
+				</ul>
+			</nav><a href="#" class="mobile-menu">
+				<div class="burger"></div>
+				<div class="burger"></div>
+				<div class="burger"></div></a>
+		</aside>
+		<main class="content-body">
+			<!-- CONTENT BEDIN-->
+			<h1 class="top">Иван Процко</h1>
+			<div class="container-fluid">
+				<article class="site-post">
+					<h2>Кратко:</h2>
+					<ul>
+						<li>стартап-менеджер;</li>
+						<li>бесплатно консультирую по любым вопросам создания сайтов;</li>
+						<li>автор методологии на базе которой мы разработали технологию разработки сайтов, которая позволяет минимум в 2 раза сократить расходы на разработку и поддержку крупных сайтов, порталов, сервисов;</li>
+						<li>могу разработать сайт любого уровня сложности и крутости дизайна;</li>
+						<li>для инвесторов, которые интересуются рынком информационных технологий у меня есть выгодные предложения.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Связь:</h2>
+					<ul>
+						<li><a href="mailto:ivanprotsko@ivanprotsko.com">ivanprotsko@ivanprotsko.com</a>;</li>
+						<li><a href="skype:ivanprotsko?call">ivanprotsko </a>— скайп;</li>
+						<li><a href="tel:+375297409043">+375 (25) 740-90-43</a>.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Открыт для предложений:</h2>
+					<ul>
+						<li>совместных веб-студий;</li>
+						<li>инвестиций в конструктор сайтов и сервисы основанные на нем;</li>
+						<li>присоединиться к группе компаний Субстанция.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Ищу:</h2>
+					<ul>
+						<li>js, php, python, scala, ruby-программиста;</li>
+						<li>верстальщика/технолога.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Действую в рамках понятий:</h2>
+					<ul>
+						<li>методология практической деятельности;</li>
+						<li>разработка программного обеспечения;</li>
+						<li>организация, руководство, управление;</li>
+						<li>проблемы языкового мышления;</li>
+						<li>информационные технологии;</li>
+						<li>автоматизация</li>
+						<li>маркетинг;</li>
+						<li>реклама;</li>
+						<li>дизайн.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Запущено:</h2>
+					<ul>
+						<li>курсы дизайна;</li>
+						<li>дизайн-бюро Купр.</li>
+						<li>приложение под IOS для посетителей тренажерного зала;</li>
+						<li>франшиза веб-студии.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Скоро</h2>
+					<ul>
+						<li>Платформа онлайн-прототипирования;</li>
+						<li>Приложение под IOS для посетителей тренажерного зала;</li>
+						<li>Франшиза веб-студии.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>В проекте:</h2>
+					<ul>
+						<li>компания по автоматизации бизнес-процессов;</li>
+						<li>ПО для управления знаниями в развивающихся организациях.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>В процессе создания или развития:</h2>
+					<ul>
+						<li>cоздание сайтов интерфейсов:
+							<ul>
+								<li>теория, стандарты и методология создания графических интерфейсов;</li>
+								<li>экспресс программа обучения дизайнеров интерфейсов;</li>
+								<li>дизайн-бюро Купр;</li>
+								<li>конструктор сайтов;</li>
+								<li>франшиза веб-студии;</li>
+							</ul>
+						</li>
+						<li>создание программ:
+							<ul>
+								<li>холдинг Субстанция;</li>
+								<li>компания по разработке мобильных приложений;</li>
+								<li>приложение для качалки;</li>
+							</ul>
+						</li>
+						<li>учебный центр:
+							<ul>
+								<li>курс «<a target="_blank" title="Дизайнера сайтов" href="http://design.ivanprotsko.com/">Дизайнера сайтов за 3 месяца или основы дизайна-сайтов</a> » (UI — 1 lvl); — <i>зайдите 11 августа — там будет новый сайт с свежими подробностями и улучшенной презентацией деталей курса</i>;</li>
+							</ul>
+						</li>
+						<li>дизайн:
+							<ul>
+								<li>курс «Художественного оформления графических интерфейсов (UI — 2 lvl);</li>
+								<li>курс «Продвинутый курс графического дизайна интерфейсов (UI— 3 lvl);</li>
+								<li>курс «Проектирования интерфейсов. Основы» (UX — 1 lvl);</li>
+								<li>курс «Продвинутый курс проектирования интерфейсов. Бизнес-анализ» (UX — 2 lvl);</li>
+								<li>курс «Продвинутый курс проектирования интерфейсов. Автоматизация» (UX — 3 lvl)</li>
+							</ul>
+						</li>
+						<li>верстка:
+							<ul>
+								<li>экспресс-курс «Верстка сайтов»;</li>
+								<li>курс «Профессиональное владение Bootstrap».</li>
+							</ul>
+						</li>
+						<li>менеджмент:
+							<ul>
+								<li>курс «Управление проектами» — организация команды разработчиков и руководство ею, введение в управление знаниями;</li>
+								<li>курс «Продукт-менеджмент» — создание интернет-продуктов с нуля: приложения, сервисы;</li>
+								<li>курс «ОРУ-методология» — системный подход к управлению развитием организации и руководством сотрудников.</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Архив проектов</h2>
+					<ul>
+						<li>2014—2015 г. — создание дилерской сети Effective Pages;</li>
+						<li>2014—2015 г. — Effective Pages – дешевые лендинги с CMS;</li>
+						<li>2014—2015 г. — партнерская программа Эр-дэ-дэ;</li>
+						<li>2013–2015 — <a target="_blank" href="http://www.er-de-de.com/">Эр-дэ-дэ</a> — удаленный отдел дизайна;</li>
+						<li>2012—2013 г. — Cубстор — платформа создания интернет-магазинов;</li>
+						<li>2010–2012 — дизайн-бюро Ивана Процко;</li>
+						<li>2009—2010 г. — Иннова — подбренд веб-студии Инновация;</li>
+						<li>2008—2009 г. — разработка CMS для сайта-визитки;</li>
+						<li>2008—2010 г. — веб-студия Инновация;</li>
+						<li>2007—2008 г. — сервис «онлайн-могил»;</li>
+						<li>2006—2007 г. — команда «СССР» по Counter-Strike;</li>
+						<li>2005—2006 г. — сайт домашней локальной сети «Shmatrix»;</li>
+						<li>2003—2004 г. — сайт школы № 200.</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>В процессе создания или развития</h2>
+					<ul>
+						<li>cоздание сайтов и интерфейсов:
+							<ul>
+								<li>теория, стандарты и методология создания графических интерфейсов;</li>
+								<li>экспресс программа обучения дизайнеров интерфейсов;</li>
+								<li>дизайн-бюро Купр;</li>
+								<li>франшиза веб-студии;</li>
+							</ul>
+						</li>
+						<li>создание программ:
+							<ul>
+								<li>холдинг Субстанция;</li>
+								<li>конструктор сайтов;</li>
+								<li>компания по разработке мобильных приложений;</li>
+								<li>приложение для качалки;</li>
+							</ul>
+						</li>
+						<li>учебный центр:
+							<ul>
+								<li>курс «Дизайнера сайтов за 3 месяца или основы дизайна-сайтов» (UI — 1 lvl);</li>
+								<li>курс «Художественного оформления графических интерфейсов (UI — 2 lvl);</li>
+								<li>курс «Продвинутый курс графического дизайна интерфейсов (UI— 3 lvl); </li>
+								<li>курс «Проектирования интерфейсов. Основы» (UX — 1 lvl);</li>
+								<li>курс «Проектирования интерфейсов. Бизнес-анализ» (UX — 2 lvl);</li>
+								<li>курс «Проектирования интерфейсов. Автоматизация» (UX — 3 lvl);</li>
+								<li>экспресс-курс «Верстка сайтов»;</li>
+								<li>курс «Профессиональное владение Bootstrap».</li>
+							</ul>
+						</li>
+					</ul>
+				</article>
+				<article class="site-post">
+					<h2>Cоц. сети:</h2>
+					<ul>
+						<li><a title="Instagram" target="_blank" href="https://instagram.com/ivanprotsko/">Instagram</a></li>
+						<li><a title="Linkedin" target="_blank" href="https://www.linkedin.com/profile/view?id=188132321&amp;amp;trk=nav_responsive_tab_profile">Linkedin</a></li>
+						<li><a title="LiveJournal" target="_blank" href="http://ivanprotsko.livejournal.com/">LiveJournal</a></li>
+						<li><a title="Twitter" target="_blank" href="http://twitter.com/ivanprotsko">Twitter</a></li>
+						<li><a title="Facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100005825347504">Facebook</a></li>
+						<li><a title="Вконтакте" target="_blank" href="https://vk.com/ivanprotsko">Вконтакте</a></li>
+						<li><a title="Medium" target="_blank" href="http://medium.com/@ivanprotsko">Medium</a></li>
+						<li><a title="Google Plus" target="_blank" href="http://plus.google.com/113143969711466806436/posts">Google Plus</a></li>
+					</ul>
+				</article>
+			</div>
+			<!-- CONTENT END-->
+			
+		</main>
+		<!-- Скрипты и Стили BEGIN-->
+		<script data-main="assets/js/init.min" src="assets/js/cdn/require.js"></script>
+		<script>
+			OnBind(document, 'DOMContentLoaded', function(){
+				includeCss([
+					'assets/css/cdn/normalize.min.css',
+					'assets/css/bootstrap/css/bootstrap.css',
+					'assets/css/style.css'
+				]);
+			});
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="assets/css/cdn/normalize.min.css"/>
+			<link rel="stylesheet" href="assets/css/style.css"/>
+		</noscript>
+		<!-- Скрипты и Стили END-->
+	</body>
+</html>

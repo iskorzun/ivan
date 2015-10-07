@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Иван Процко и партнеры</title>
+		<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/>
+		<!-- Критический css, шрифты, модернайзер-->
+		<script>!function(){"use strict";var e;return window.OnBind=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)},e=function(e){var t;t=document.createElement("link"),t.href=e,t.rel="stylesheet",t.type="text/css",document.getElementsByTagName("head")[0].appendChild(t)},window.includeCss=function(t){var n,a,r;if(Array.isArray(t))for(n=0,a=t.length;a>n;n++)r=t[n],e(r);else e(t)}}();
+		</script>
+		<script>!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var f in y){if(e=[],n=y[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),b.push((o?"":"no-")+a.join("-"))}}function i(e){var n=_.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?_.className.baseVal=n:_.className=n)}function s(e,n){return!!~(""+e).indexOf(n)}function a(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function f(){var e=n.body;return e||(e=a(x?"svg":"body"),e.fake=!0),e}function u(e,t,r,o){var i,s,u,l,A="modernizr",p=a("div"),d=f();if(parseInt(r,10))for(;r--;)u=a("div"),u.id=o?o[r]:A+(r+1),p.appendChild(u);return i=a("style"),i.type="text/css",i.id="s"+A,(d.fake?d:p).appendChild(i),d.appendChild(p),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),p.id=A,d.fake&&(d.style.background="",d.style.overflow="hidden",l=_.style.overflow,_.style.overflow="hidden",_.appendChild(d)),s=t(p,e),d.fake?(d.parentNode.removeChild(d),_.style.overflow=l,_.offsetHeight):p.parentNode.removeChild(p),!!s}function l(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function A(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(l(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+l(n[o])+":"+r+")");return i=i.join(" or "),u("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function p(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function d(e,n,o,i){function f(){l&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=A(e,o);if(!r(u,"undefined"))return u}for(var l,d,c,m,v,h=["modernizr","tspan"];!U.style;)l=!0,U.modElem=a(h.shift()),U.style=U.modElem.style;for(c=e.length,d=0;c>d;d++)if(m=e[d],v=U.style[m],s(m,"-")&&(m=p(m)),U.style[m]!==t){if(i||r(o,"undefined"))return f(),"pfx"==n?m:!0;try{U.style[m]=o}catch(g){}if(U.style[m]!=v)return f(),"pfx"==n?m:!0}return f(),!1}function c(e,n){return function(){return e.apply(n,arguments)}}function m(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?c(o,t||n):o);return!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+B.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?d(a,n,o,i):(a=(e+" "+S.join(s+" ")+s).split(" "),m(a,n,t))}function h(e,n,r){return v(e,t,t,n,r)}function g(e,n){if("object"==typeof e)for(var t in e)j(e,t)&&g(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var y=[],w={_version:"3.0.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){y.push({name:e,fn:n,options:t})},addAsyncTest:function(e){y.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=w,Modernizr=new Modernizr;var b=[],_=n.documentElement,x="svg"===_.nodeName.toLowerCase(),C="Moz O ms Webkit",S=w._config.usePrefixes?C.toLowerCase().split(" "):[];w._domPrefixes=S;var T=w._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):[];w._prefixes=T;var B=w._config.usePrefixes?C.split(" "):[];w._cssomPrefixes=B;var Q={elem:a("modernizr")};Modernizr._q.push(function(){delete Q.elem});var U={style:Q.elem.style};Modernizr._q.unshift(function(){delete U.style}),w.testAllProps=v;var R=function(n){var r,o=T.length,i=e.CSSRule;if("undefined"==typeof i)return t;if(!n)return!1;if(n=n.replace(/^@/,""),r=n.replace(/-/g,"_").toUpperCase()+"_RULE",r in i)return"@"+n;for(var s=0;o>s;s++){var a=T[s],f=a.toUpperCase()+"_"+r;if(f in i)return"@-"+a.toLowerCase()+"-"+n}return!1};w.atRule=R;var E=w.prefixed=function(e,n,t){return 0===e.indexOf("@")?R(e):(-1!=e.indexOf("-")&&(e=p(e)),n?v(e,n,t):v(e,"pfx"))};w.prefixedCSS=function(e){var n=E(e);return n&&l(n)};w.testAllProps=h;var k="CSS"in e&&"supports"in e.CSS,P="supportsCSS"in e;Modernizr.addTest("supports",k||P),Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return h("filter","blur(2px)");var e=a("a");return e.style.cssText=T.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)});var z=w.testStyles=u;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var r=["@media (",T.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(r,function(e){t=9===e.offsetTop})}return t}),Modernizr.addTest("csstransforms",function(){return-1===navigator.userAgent.indexOf("Android 2.")&&h("transform","scale(1)",!0)}),Modernizr.addTest("csstransforms3d",function(){var e=!!h("perspective","1px",!0),n=Modernizr._config.usePrefixes;if(e&&(!n||"webkitPerspective"in _.style)){var t;Modernizr.supports?t="@supports (perspective: 1px)":(t="@media (transform-3d)",n&&(t+=",(-webkit-transform-3d)")),t+="{#modernizr{left:9px;position:absolute;height:5px;margin:0;padding:0;border:0}}",z(t,function(n){e=9===n.offsetLeft&&5===n.offsetHeight})}return e}),Modernizr.addTest("csstransitions",h("transition","all",!0));var j;!function(){var e={}.hasOwnProperty;j=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),w._l={},w.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},w._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){w.addTest=g}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;g(e,i?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})}),o(),i(b),delete w.addTest,delete w.addAsyncTest;for(var D=0;D<Modernizr._q.length;D++)Modernizr._q[D]();e.Modernizr=Modernizr}(window,document);
+		</script>
+		<meta http-equiv="x-dns-prefetch-control" content="on"/>
+		<link rel="dns-prefetch" href="https://use.typekit.net"/>
+		<script src="https://use.typekit.net/srp3qat.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<!-- Критический css, шрифты, модернайзер-->
+		
+		
+	</head>
+	<body>
+		<aside class="left-menu"><a href="index.html" title="Прейти на главную" class="site-logo table">
+				<div class="table-cell vrt">И П<br>И П</div>
+				<div class="table-cell">Иван Процко<br >и партнеры</div></a>
+			<nav>
+				<ul>
+					<li><a href="courses.html" title="Посмотреть все курсы и продукты">Учебный центр</a></li>
+					<li><a href="incubator.html" title="Инкубатор">Инкубатор</a></li>
+					<li><a href="accelerator.html" title="Акселератор">Акселератор</a></li>
+					<li><a href="services.html" title="Наши услуги">Услуги</a></li>
+					<li><a href="contact.html" title="Связь">Связь</a></li>
+				</ul>
+			</nav><a href="#" class="mobile-menu">
+				<div class="burger"></div>
+				<div class="burger"></div>
+				<div class="burger"></div></a>
+		</aside>
+		<main class="content-body">
+			<!-- CONTENT BEDIN-->
+			<h1 class="top">Инкубатор</h1>
+			<div class="clearfix incub">
+				<div class="col-lg-6">
+					<article class="incub-el">
+						<div class="incub-tag">Сервис</div>
+						<h2>Управление знаниями в корпорациях</h2>
+						<p>Создание и развитие большой базы знаний, с возможностью простого управления сложными связями</p>
+						<button type="button" class="incub-exe">Записаться на бета-тестирование</button>
+					</article>
+				</div>
+				<div class="col-lg-6">
+					<article class="incub-el">
+						<div class="incub-tag">Сервис</div>
+						<h2>Конструктор сайтов</h2>
+						<p>Создание уникальных дизайнов для 80% сайтов, без Фотошопа, получая в итоге готовый к использованию сайт в интеренте</p>
+						<button type="button" class="incub-exe">Записаться на бета-тестирование</button>
+					</article>
+				</div>
+				<div class="col-lg-6">
+					<article class="incub-el">
+						<div class="incub-tag">Франшиза</div>
+						<h2>Веб-студия и рекламное агентство</h2>
+						<p>Cоздание сайтов и реклама в интернете</p>
+						<button type="button" class="incub-exe">Записаться на бета-тестирование</button>
+					</article>
+				</div>
+				<div class="col-lg-6">
+					<article class="incub-el">
+						<div class="incub-tag">Мобильное приложение</div>
+						<h2>Тренировочный дневникх</h2>
+						<p>Удобное ведение дневника для посетителей тренажерных залов.</p>
+						<button type="button" class="incub-exe">Записаться на бета-тестирование</button>
+						<div class="incub-form">
+							<form action="/post3" method="post" autocomplete="on" class="axs-form">
+								<h3>ЗАЯВКА НА УЧАСТИЕ В<br> БЕТА-ТЕСТИРОВАНИИ</h3>
+								<input type="text" name="name" placeholder="ВАШЕ ИМЯ" required="required" class="axs-input"/>
+								<input type="tel" name="tel" placeholder="НОМЕР ТЕЛЕФОНА" required="required" class="axs-input"/>
+								<input type="email" name="email" placeholder="E-MAIL" required="required" class="axs-input"/>
+								<button type="submit" class="axs-submit">Отправить</button>
+								<div class="axs-form-done">Спасибо! <br>Ваша заявка<br>успешно отправлена.</div>
+							</form>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-6">
+					<article class="incub-adw">
+						<div class="incub-tag">?</div>
+						<h2>Ваш стартап</h2>
+						<p>Примем участие в качестве: управления развитием, консалтинга, инвестиций или создателей</p><a href="/accelerator.html" title="Отправить заявку" class="incub-exe">Отправить заявку</a>
+					</article>
+				</div>
+				<!-- Форма для клонирования
+				т.е при клике "ЗАПИСАТЬСЯ НА БЕТА-ТЕСТИРОВАНИЕ"
+				она встраивается в нужный нам блок,
+				динамически добавляется скрытое поле 'test' которое хранит название ТОГО Что выбрал пользователь,
+				В js авторитически парсит атрибуты action,post и отправляет запрос на указаный в форме action!
+				Данные:
+					name  - "Вася"
+					email - "vasy@fake.com"
+					tel   - "666 13 77"
+					test  - "Конструктор сайтов" (можно изменить содержимое, если есть предложения)
+				-->
+				<div style="display:none" class="virtual">
+					<div class="incub-form">
+						<form action="/post3" method="post" autocomplete="on" class="axs-form">
+							<h3>ЗАЯВКА НА УЧАСТИЕ В БЕТА-ТЕСТИРОВАНИИ</h3>
+							<input type="text" name="name" placeholder="ВАШЕ ИМЯ" required="required" class="axs-input"/>
+							<input type="tel" name="tel" placeholder="НОМЕР ТЕЛЕФОНА" required="required" class="axs-input"/>
+							<input type="email" name="email" placeholder="E-MAIL" required="required" class="axs-input"/>
+							<button type="submit" class="axs-submit">Отправить</button>
+							<div class="axs-form-done">Спасибо! <br>Ваша заявка<br>успешно отправлена.</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- CONTENT END-->
+			
+		</main>
+		<!-- Скрипты и Стили BEGIN-->
+		<script data-main="assets/js/init.min" src="assets/js/cdn/require.js"></script>
+		<script>
+			OnBind(document, 'DOMContentLoaded', function(){
+				includeCss([
+					'assets/css/cdn/normalize.min.css',
+					'assets/css/bootstrap/css/bootstrap.css',
+					'assets/css/style.css'
+				]);
+			});
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="assets/css/cdn/normalize.min.css"/>
+			<link rel="stylesheet" href="assets/css/style.css"/>
+		</noscript>
+		<!-- Скрипты и Стили END-->
+	</body>
+</html>

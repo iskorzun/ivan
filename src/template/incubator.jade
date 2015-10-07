@@ -1,0 +1,65 @@
+extends layout
+
+block content
+	h1.top Инкубатор
+
+	.clearfix.incub
+		.col-lg-6: article.incub-el
+			.incub-tag Сервис
+			h2 Управление знаниями в корпорациях
+			p Создание и развитие большой базы знаний, с возможностью простого управления сложными связями
+			button.incub-exe(type="button") Записаться на бета-тестирование
+		.col-lg-6: article.incub-el
+			.incub-tag Сервис
+			h2 Конструктор сайтов
+			p Создание уникальных дизайнов для 80% сайтов, без Фотошопа, получая в итоге готовый к использованию сайт в интеренте
+			button.incub-exe(type="button") Записаться на бета-тестирование
+		.col-lg-6: article.incub-el
+			.incub-tag Франшиза
+			h2 Веб-студия и рекламное агентство
+			p Cоздание сайтов и реклама в интернете
+			button.incub-exe(type="button") Записаться на бета-тестирование
+		.col-lg-6: article.incub-el
+			.incub-tag Мобильное приложение
+			h2 Тренировочный дневникх
+			p Удобное ведение дневника для посетителей тренажерных залов.
+			button.incub-exe(type="button") Записаться на бета-тестирование
+			.incub-form
+				form.axs-form(action="/post3",method="post",autocomplete="on")
+					h3 ЗАЯВКА НА УЧАСТИЕ В<br> БЕТА-ТЕСТИРОВАНИИ
+					input.axs-input(type="text",name="name",placeholder='ВАШЕ ИМЯ',required)
+					input.axs-input(type="tel",name="tel",placeholder='НОМЕР ТЕЛЕФОНА',required)
+					input.axs-input(type="email",name="email",placeholder='E-MAIL',required)
+					button.axs-submit(type='submit') Отправить
+					.axs-form-done Спасибо! <br>Ваша заявка<br>успешно отправлена.
+		.col-lg-6: article.incub-adw
+			.incub-tag ?
+			h2 Ваш стартап
+			p Примем участие в качестве: управления развитием, консалтинга, инвестиций или создателей
+			a.incub-exe(href="/accelerator.html",title="Отправить заявку") Отправить заявку
+
+
+
+
+
+
+
+		// Форма для клонирования
+			т.е при клике "ЗАПИСАТЬСЯ НА БЕТА-ТЕСТИРОВАНИЕ"
+			она встраивается в нужный нам блок,
+			динамически добавляется скрытое поле 'test' которое хранит название ТОГО Что выбрал пользователь,
+			В js авторитически парсит атрибуты action,post и отправляет запрос на указаный в форме action!
+			Данные:
+				name  - "Вася"
+				email - "vasy@fake.com"
+				tel   - "666 13 77"
+				test  - "Конструктор сайтов" (можно изменить содержимое, если есть предложения)
+		.virtual(style="display:none")
+			.incub-form
+				form.axs-form(action="/post3",method="post",autocomplete="on")
+					h3 ЗАЯВКА НА УЧАСТИЕ В БЕТА-ТЕСТИРОВАНИИ
+					input.axs-input(type="text",name="name",placeholder='ВАШЕ ИМЯ',required)
+					input.axs-input(type="tel",name="tel",placeholder='НОМЕР ТЕЛЕФОНА',required)
+					input.axs-input(type="email",name="email",placeholder='E-MAIL',required)
+					button.axs-submit(type='submit') Отправить
+					.axs-form-done Спасибо! <br>Ваша заявка<br>успешно отправлена.

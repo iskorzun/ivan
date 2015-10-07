@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Иван Процко и партнеры</title>
+		<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/>
+		<!-- Критический css, шрифты, модернайзер-->
+		<script>!function(){"use strict";var e;return window.OnBind=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)},e=function(e){var t;t=document.createElement("link"),t.href=e,t.rel="stylesheet",t.type="text/css",document.getElementsByTagName("head")[0].appendChild(t)},window.includeCss=function(t){var n,a,r;if(Array.isArray(t))for(n=0,a=t.length;a>n;n++)r=t[n],e(r);else e(t)}}();
+		</script>
+		<script>!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var f in y){if(e=[],n=y[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),b.push((o?"":"no-")+a.join("-"))}}function i(e){var n=_.className,t=Modernizr._config.classPrefix||"";if(x&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),x?_.className.baseVal=n:_.className=n)}function s(e,n){return!!~(""+e).indexOf(n)}function a(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):x?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function f(){var e=n.body;return e||(e=a(x?"svg":"body"),e.fake=!0),e}function u(e,t,r,o){var i,s,u,l,A="modernizr",p=a("div"),d=f();if(parseInt(r,10))for(;r--;)u=a("div"),u.id=o?o[r]:A+(r+1),p.appendChild(u);return i=a("style"),i.type="text/css",i.id="s"+A,(d.fake?d:p).appendChild(i),d.appendChild(p),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),p.id=A,d.fake&&(d.style.background="",d.style.overflow="hidden",l=_.style.overflow,_.style.overflow="hidden",_.appendChild(d)),s=t(p,e),d.fake?(d.parentNode.removeChild(d),_.style.overflow=l,_.offsetHeight):p.parentNode.removeChild(p),!!s}function l(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function A(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(l(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+l(n[o])+":"+r+")");return i=i.join(" or "),u("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==getComputedStyle(e,null).position})}return t}function p(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function d(e,n,o,i){function f(){l&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=A(e,o);if(!r(u,"undefined"))return u}for(var l,d,c,m,v,h=["modernizr","tspan"];!U.style;)l=!0,U.modElem=a(h.shift()),U.style=U.modElem.style;for(c=e.length,d=0;c>d;d++)if(m=e[d],v=U.style[m],s(m,"-")&&(m=p(m)),U.style[m]!==t){if(i||r(o,"undefined"))return f(),"pfx"==n?m:!0;try{U.style[m]=o}catch(g){}if(U.style[m]!=v)return f(),"pfx"==n?m:!0}return f(),!1}function c(e,n){return function(){return e.apply(n,arguments)}}function m(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?c(o,t||n):o);return!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+B.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?d(a,n,o,i):(a=(e+" "+S.join(s+" ")+s).split(" "),m(a,n,t))}function h(e,n,r){return v(e,t,t,n,r)}function g(e,n){if("object"==typeof e)for(var t in e)j(e,t)&&g(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var y=[],w={_version:"3.0.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){y.push({name:e,fn:n,options:t})},addAsyncTest:function(e){y.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=w,Modernizr=new Modernizr;var b=[],_=n.documentElement,x="svg"===_.nodeName.toLowerCase(),C="Moz O ms Webkit",S=w._config.usePrefixes?C.toLowerCase().split(" "):[];w._domPrefixes=S;var T=w._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):[];w._prefixes=T;var B=w._config.usePrefixes?C.split(" "):[];w._cssomPrefixes=B;var Q={elem:a("modernizr")};Modernizr._q.push(function(){delete Q.elem});var U={style:Q.elem.style};Modernizr._q.unshift(function(){delete U.style}),w.testAllProps=v;var R=function(n){var r,o=T.length,i=e.CSSRule;if("undefined"==typeof i)return t;if(!n)return!1;if(n=n.replace(/^@/,""),r=n.replace(/-/g,"_").toUpperCase()+"_RULE",r in i)return"@"+n;for(var s=0;o>s;s++){var a=T[s],f=a.toUpperCase()+"_"+r;if(f in i)return"@-"+a.toLowerCase()+"-"+n}return!1};w.atRule=R;var E=w.prefixed=function(e,n,t){return 0===e.indexOf("@")?R(e):(-1!=e.indexOf("-")&&(e=p(e)),n?v(e,n,t):v(e,"pfx"))};w.prefixedCSS=function(e){var n=E(e);return n&&l(n)};w.testAllProps=h;var k="CSS"in e&&"supports"in e.CSS,P="supportsCSS"in e;Modernizr.addTest("supports",k||P),Modernizr.addTest("cssfilters",function(){if(Modernizr.supports)return h("filter","blur(2px)");var e=a("a");return e.style.cssText=T.join("filter:blur(2px); "),!!e.style.length&&(n.documentMode===t||n.documentMode>9)});var z=w.testStyles=u;Modernizr.addTest("touchevents",function(){var t;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)t=!0;else{var r=["@media (",T.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");z(r,function(e){t=9===e.offsetTop})}return t}),Modernizr.addTest("csstransforms",function(){return-1===navigator.userAgent.indexOf("Android 2.")&&h("transform","scale(1)",!0)}),Modernizr.addTest("csstransforms3d",function(){var e=!!h("perspective","1px",!0),n=Modernizr._config.usePrefixes;if(e&&(!n||"webkitPerspective"in _.style)){var t;Modernizr.supports?t="@supports (perspective: 1px)":(t="@media (transform-3d)",n&&(t+=",(-webkit-transform-3d)")),t+="{#modernizr{left:9px;position:absolute;height:5px;margin:0;padding:0;border:0}}",z(t,function(n){e=9===n.offsetLeft&&5===n.offsetHeight})}return e}),Modernizr.addTest("csstransitions",h("transition","all",!0));var j;!function(){var e={}.hasOwnProperty;j=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),w._l={},w.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},w._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){w.addTest=g}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;g(e,i?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})}),o(),i(b),delete w.addTest,delete w.addAsyncTest;for(var D=0;D<Modernizr._q.length;D++)Modernizr._q[D]();e.Modernizr=Modernizr}(window,document);
+		</script>
+		<meta http-equiv="x-dns-prefetch-control" content="on"/>
+		<link rel="dns-prefetch" href="https://use.typekit.net"/>
+		<script src="https://use.typekit.net/srp3qat.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<!-- Критический css, шрифты, модернайзер-->
+		
+		
+	</head>
+	<body>
+		<aside class="left-menu"><a href="index.html" title="Прейти на главную" class="site-logo table">
+				<div class="table-cell vrt">И П<br>И П</div>
+				<div class="table-cell">Иван Процко<br >и партнеры</div></a>
+			<nav>
+				<ul>
+					<li><a href="courses.html" title="Посмотреть все курсы и продукты">Учебный центр</a></li>
+					<li><a href="incubator.html" title="Инкубатор">Инкубатор</a></li>
+					<li><a href="accelerator.html" title="Акселератор">Акселератор</a></li>
+					<li><a href="services.html" title="Наши услуги">Услуги</a></li>
+					<li><a href="contact.html" title="Связь">Связь</a></li>
+				</ul>
+			</nav><a href="#" class="mobile-menu">
+				<div class="burger"></div>
+				<div class="burger"></div>
+				<div class="burger"></div></a>
+		</aside>
+		<main class="content-body">
+			<!-- CONTENT BEDIN-->
+			<h1 class="top">Курсы и продукты</h1>
+			<div class="grid">
+				<article class="col-2 curs open">
+					<div class="curs-img"><img src="data:image/png;base64,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" alt="Профессия — дизайнер сайтов" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">90 часов</div>
+					</div>
+					<h2><a href="#" title="Профессия — дизайнер сайтов">Профессия — дизайнер сайтов</a></h2>
+					<p class="small curs-desk">С нуля, за 3 месяца, уделяя 2–3 часа  в день, до уровня устройства на работу</p>
+					<div class="clearfix curs-bottom">
+						<div class="float-l">Цену уточняйте</div>
+						<div class="float-r">26 октября</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABDCAMAAAAI9LO2AAABd1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACRE7InAAAAfHRSTlMAAQIDBAUGBwgJCgwNDg8QExUWGhseISImJygsMjY5Ozw/QEpOUlNXWVpcXmNkamxucHJzdXl7foGChYaHiImLjY6TlJqdn6GrrK6vsLKztLW2t7i+v8HCx8vMzc7Q0dLT1dbc3t/g4eLj5OXn6Ovu8PHy8/T19vf5/P3+0F2uVgAAAatJREFUeAHtz0ezElEQhuHvXgkgKBgQs4A5Y0DMQQygYlAMghhQEAyIyCBq/3irGxZIzZnpKne3zrPpXnS9cwaIsABUgnwbxr8ksAoRYpehcodvewsdCZxYASEbsiEbsiEbsiEbsiEbsqGgzKtQqfJtxz2EEc+bUHnOt01DqMvzLlTe8m3NEGryfAaVz3xbMYRqPN9AZcy3NwyhCs9xEAopYpcMoQuy7IDCAWJHDaHds0XhOrGthtDa37yUodDgyz4MIbzm5XscvtLyyXvGUEm2PHxdI3baGMrJ9n4ZPmIDvvuz2RhCQ9Z98HGSWBXm0EFZv66Hpy0OsaxHKNCV/dESPIReEWvAI4RjJArwUCKx1zO09IDEFeObQrdJ3IJnCMkeiXIErhI1Eq3VPiFkfpH4cHjZ5TnHv5AYb4NfCIcmNPVuf2zhNUfaNOXsgX8ImT7NTJ4WdqbkH2KbsmdfyFvZp+3QhJBu0Tyn0/tJ8+oboAshfm5IRt/ORKEKieTFEbkaFNcA2pBYd+qJQwuG9/MJCHVIhHLnH9c/Su5H++XD4q4A/ks0tTEM6P0FA5A4rVSXMkIAAAAASUVORK5CYII=" alt="Мастерство UI-дизайна" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">60 часов</div>
+					</div>
+					<h2>Мастерство UI-дизайна</h2>
+					<p class="small curs-desk">Профессиональный курс по дизайну пользовательских интерфейсов</p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,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" alt="Мастерство UI-дизайна" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">60 часов</div>
+					</div>
+					<h2>Мастерство UI-дизайна</h2>
+					<p class="small curs-desk">Профессиональный курс по дизайну пользовательских интерфейсов</p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAmCAMAAACvbwi9AAABqlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIzHG2AAAAjXRSTlMAAQIDBAUGBwkLDA0PEBITFBYXGBkaHCEjJScqKywtLi8wMTM0Njc4Ojs8QUdMTVBRUlRVVllaXV9jZGVnaG90dXZ4eXp7fX+AgYOEiIqLj5CRlJWanJ6foKWmp6iqrK2usLG0uLrBxMfIycvMzs/R0tPU1dbZ3N/i4+Tl6Ons7e7w8fP19/j5+vv8/f6zgPnBAAABuElEQVR4Ae3TV1OTQRSH8RODRUAUUSMaC/YeFbCDirErFuygWEQjotjFIkpJQjTPd3bHeZOYN2dPZnLNc7U7//nd7MxKoYWbOjpLtUtZKzsr2iWF4g8+5/m/6XJ8mopGgqm+NwdY+IYXN34CbDzkxXdwTVw+sC4WNFWBPwLxWLGtRZzANdgipSbDOJKGX1JqeRG/A15ExcItwCsNL/gNf1aJibcADzW8GfggNu4Armj4KHC3Cj4JdGu4G7hZBfcBCQ3vDA4WfgK0aXgxkGmy8VtgkYblK9Bv4ymYFBV34eqJGrgJGNVx5Bmul3tWePEG4LGOpfU74JoYC8qH8D7gmgfLkkH7V/UAXR7s2j/ww8C3gO1e7IrcBt70/isbws+BRgtvzEE2rj7YHHf/IgaeOwqcExWvAe5Z+Dzwfp6OjwDtBm6bgfw20fEjSNf7cd1r4LrouCENA+LHZ4CxBg8+DjOtfrw2C+wWHS8dh6vixXUjQL/ouHkYns7341PAz2YNLzvYNw6ZC8lQl4BvyeRekdUZ4JBo+Cxm9yU6DAxJbfgEMB2rEVs5zDFR2zGLlQ6nUqmEqK1308W/B9CYEtlXfNsAAAAASUVORK5CYII=" alt="Яндекс.Директ" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">10 часов</div>
+					</div>
+					<h2>Яндекс.Директ</h2>
+					<p class="small curs-desk">Все о разработке дизайна графического интерфейса мобильных приложений</p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABwCAMAAACD8WbPAAAAsVBMVEUAAABVVVUzMzM5OTkzMzNAQEA8PDw5OTkzMzMrKyszMzM5OTkzMzM4ODg3NzcvLy80NDQxMTE1NTU1NTUzMzMxMTEyMjI1NTUxMTE0NDQ1NTU0NDQxMTEzMzMyMjIzMzM1NTU1NTU0NDQzMzM0NDQ0NDQ0NDQyMjIzMzMyMjIzMzMzMzM0NDQyMjIyMjIyMjIyMjIzMzM0NDQ0NDQ0NDQzMzM0NDQzMzMyMjI0NDQzMzMLG72gAAAAOnRSTlMAAwUJDxAREhQYHiQoKSoxO0NETVBTYGFiY2ZnaGlwc3R+gJydnqOksLi5urvM1drb3Ojs7fDx9fj7lQvtugAAATlJREFUeAHt2ttOwkAQxvGvVKDiAbQqB8WKCCJyqJQCO+//YJat2fRm06Q7GqPze4D/TXu13+BLPRyOnisZDcM6ijpzRQ7UvGNS/pScTX1ojSUxWDaQ8RbEYuEBeCImEVDfEpPtCXqU242jx0qi8Y5yPcxIW7dQWSsmbYYP0q7g4Jq0GHs6OtRg4Z8aPixqBzrag7QNLB4UGeoeFhvSymIxFawdYxMqmDjGvPDOCD2HmMXPxpJzJ4mJ8fn1sfTGSfptX1NiEpOYxCQmMYlJTGISk5jEJCYxiUlMYhKTmMTSWyfpf3z0Tc6cJH/hP7vs9vvdC55YW1FGtVliA9IGLLFgRZlVUB4rmddyzSBowrDPa7zDH+sk6T6WvpixlHfGZR2Y2abvd497lAf8V45zAbZDhrcOihocJxafqmqCaVmy2O8AAAAASUVORK5CYII=" alt="UI-дизайн мобильных приложений" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">3 часов</div>
+					</div>
+					<h2>UI-дизайн мобильных приложений</h2>
+					<p class="small curs-desk">Все о разработке дизайна графического интерфейса мобильных приложений</p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,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" alt="Прототи-пирование в Axure" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">30 часов</div>
+					</div>
+					<h2>Прототи-пирование в Axure</h2>
+					<p class="small curs-desk">Профессиональный курс по дизайну пользовательских интерфейсов </p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,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" alt="Исскуство продажи веб-сайтов" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">30 часов</div>
+					</div>
+					<h2>Исскуство продажи веб-сайтов</h2>
+					<p class="small curs-desk">Профессиональный курс по дизайну пользовательских интерфейсов</p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,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" alt="Google.Adwords" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">10 часов</div>
+					</div>
+					<h2>Google.Adwords</h2>
+					<p class="small curs-desk">Все о разработке дизайна графического интерфейса мобильных приложений </p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<article class="col-2 curs plan">
+					<div class="curs-img"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAaCAMAAAAaElvSAAABmFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADn+ofsAAAAh3RSTlMAAQIDBQYHCAkMDQ4REhUWFxgaGx0eICEjJCUmKCwuLzQ3ODw/QENFR0lLTE1QUlNVVllbXl9gYWRlZmlrbG5vcnR2d3p7fn+BioyOj5SWmJmam6KjpKanqbGztbi7vL/AxsfMzc7Q0dTV2Nna29ze4OHi5OXn6uvs7/Dx8vT19vf5+vv8/f69yVYIAAAB+ElEQVR4Aa2VV1cTURhFTwpSUBFjATRYUGMRVCxiETUWQY0FRFCjiAoSsItiQUlI4vnbrm/dKTN35luLB/bTzco++848DVzSO3uP7c+m4ZLygEMi5ZJYhSB0jM5XKSxP3miH0EqPLAxTdLm6GgGtwxX6VMa2hlfDZtRFJasIzXMMs3QutFpIQhjSsoowSpuJ0Io5GSU+KllFOEGbdy3h1SNZ9VDJKsI4DZ9nyuZQ3mWt/jQDeKhlFcF59jyQ7OybJHke1oqngMafSlYR3L9fHZQrcWBqDJHsc+A4lawiJFfoUHtTONkBpKPZegZP1awizDPI7OX1oewyhWsbq+4vO6sJtximfD2YfWwuG6RQemtndaHtEy0KSX91dIXCNwr5mWhWFTIlWtz3V3ue0KO2OZrVBWx4wTC17f6qjx5FRLOqIGTvLDLIoL9q+EGX/pisLuDIWSDVPfBgukqHu/4KBTr8aorJ6sKmRRa3QGg85Nx8O7DaTYcRxGR14RnJpaFu6bZ9cd/GX6FEQ4+SjRcu0PB9ujhboaEruMqb0wdEs7qw4y8jLCSCq0ydwk01GydMMEJ1X2iFohz+bVOzcULLOG2uWKt+ObyEktWE3tcM8vUirFXTb5JnlKwiCLl7czTU319aBzuLEfkAKFlNMLTvPXx6INfZgLXhPzGdEVCFQWfKAAAAAElFTkSuQmCC" alt="Маркетинг в социальных сетях" class="img-responsive"/></div>
+					<div class="clearfix">
+						<div class="float-l small">Учебный курс</div>
+						<div class="float-r curs-h">90 часов</div>
+					</div>
+					<h2>Маркетинг в социальных сетях</h2>
+					<p class="small curs-desk">Все о разработке дизайна графического интерфейса мобильных приложений </p>
+					<div class="clearfix curs-bottom">
+						<button type="button" class="float-l curs-showform">Подписаться</button>
+						<div class="float-r">СКОРО</div>
+					</div>
+				</article>
+				<div class="gap"></div>
+				<div class="gap"></div>
+			</div>
+			<!-- Форма для клонирования т.е при клике "ПОДПИСАТЬСЯ" она встраивается в нужный нам блок, 
+			динамически добавляется скрытое поле 'curs' которое хранит название курса,
+			В js авторитически парсит атрибуты action,post и отправляет запрос на указаный в форме action! 
+			Данные:
+				name -
+				email -
+				curs -
+			-->
+			<form action="/post" method="post" autocomplete="on" style="display:none" class="curs-form clone-form">
+				<h3 class="curs-form-info">Учебный курс в разработке</h3>
+				<p class="curs-form-desk">Подпишитесь, чтобы узнать первым о начале записи и скидках</p>
+				<p class="curs-form-done">Поздравляем!<br>Вы успешно подписались</p>
+				<input type="text" name="name" placeholder="ВАШЕ ИМЯ" required="required" class="curs-form-input"/>
+				<input type="email" name="email" placeholder="E-MAIL" required="required" class="curs-form-input"/>
+				<button type="submit" class="curs-form-submit">Подписаться</button>
+				<button type="button" class="curs-form-hide">Не подписываться</button>
+			</form>
+			<!-- CONTENT END-->
+			
+		</main>
+		<!-- Скрипты и Стили BEGIN-->
+		<script data-main="assets/js/init.min" src="assets/js/cdn/require.js"></script>
+		<script>
+			OnBind(document, 'DOMContentLoaded', function(){
+				includeCss([
+					'assets/css/cdn/normalize.min.css',
+					'assets/css/bootstrap/css/bootstrap.css',
+					'assets/css/style.css'
+				]);
+			});
+		</script>
+		<noscript>
+			<link rel="stylesheet" href="assets/css/cdn/normalize.min.css"/>
+			<link rel="stylesheet" href="assets/css/style.css"/>
+		</noscript>
+		<!-- Скрипты и Стили END-->
+	</body>
+</html>

@@ -1,0 +1,25 @@
+
+// .input1::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+// .input1::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+// .input1:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+// .input1:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+
+// .input1:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+// .input1:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+// .input1:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+// .input1:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+_filter()
+	-webkit-filter: arguments
+	-moz-filtera: arguments
+	-ms-filter: arguments
+	-o-filter: arguments
+	filter: arguments
+
+
+
+filter-blur(a)
+	filter: url(s("data:image/svg+xml:utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\'><feGaussianBlur in=\'SourceGraphic\' stdDeviation=\'%s\' /></filter></svg>#blur", a))
+	_filter(blur(unit(a,px)))
+	// filter: 'progid:DXImageTransform.Microsoft.Blur(PixelRadius=%s)' % a // NOT work in postCSS
+

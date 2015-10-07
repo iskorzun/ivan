@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		block head
+			meta(charset="utf-8")
+			meta(http-equiv="X-UA-Compatible",content="IE=edge")
+			meta(name="viewport",content="width=device-width, initial-scale=1")
+			title Иван Процко и партнеры
+
+			link(rel="shortcut icon",href="assets/img/favicon/favicon.ico",type="image/x-icon")
+
+			// Критический css, шрифты, модернайзер
+			include head~
+			// Критический css, шрифты, модернайзер
+
+
+
+	body
+		aside.left-menu
+			a(href="index.html",title="Прейти на главную").site-logo.table
+				.table-cell.vrt И П<br>И П
+				.table-cell Иван Процко<br >и партнеры
+			nav
+				ul
+					//- li: a(href="#",title="Учебный центр") Учебный центр
+					li: a(href="courses.html",title="Посмотреть все курсы и продукты") Учебный центр
+					li: a(href="incubator.html",title="Инкубатор") Инкубатор
+					li: a(href="accelerator.html",title="Акселератор") Акселератор
+					li: a(href="services.html",title="Наши услуги") Услуги
+					li: a(href="contact.html",title="Связь") Связь
+			a(href="#").mobile-menu
+				.burger
+				.burger
+				.burger
+		main.content-body
+			// CONTENT BEDIN
+			block content
+			// CONTENT END
+
+
+		// Скрипты и Стили BEGIN
+		block footer
+			script(data-main="assets/js/init.min",src="assets/js/cdn/require.js")
+			script.
+				OnBind(document, 'DOMContentLoaded', function(){
+					includeCss([
+						'assets/css/cdn/normalize.min.css',
+						'assets/css/bootstrap/css/bootstrap.css',
+						'assets/css/style.css'
+					]);
+				});
+			noscript
+				link(rel="stylesheet", href="assets/css/cdn/normalize.min.css")
+				link(rel="stylesheet", href="assets/css/style.css")
+		// Скрипты и Стили END
+
